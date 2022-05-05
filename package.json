@@ -1,0 +1,23 @@
+{
+  "name": "national-holidays",
+  "version": "1.0.0",
+  "description": "--- What is it good for?",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvieciai/national-holidays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvieciai/national-holidays/issues"
+  },
+  "homepage": "https://github.com/kvieciai/national-holidays#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
