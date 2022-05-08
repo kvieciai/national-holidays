@@ -1,10 +1,9 @@
 ---
-title: 'Hello, world'
+title: 'National Holidays'
 layout: 'layouts/home.html'
 intro:
-  eyebrow: This is my heading (eyebrow)
+  eyebrow: National Holidays
+  introduction: Human-centered, mass incarceration B-corp; sustainable social enterprise; green space disrupt natural.
   image: '/images/bg/toast.jpg'
   imageAlt: 'Buttered toasted white bread'
 ---
-
-This is pretty _rad_, right?

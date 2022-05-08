@@ -1,0 +1,73 @@
+.calendar {
+  padding-top: 1em;
+}
+
+ul, ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  // Not sure about this, one. Play around when there's more text.
+  align-items: flex-start;
+  justify-content: left;
+  list-style: none;
+  margin-left: 0;
+  padding: 0.5em;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  border-radius: 16px;
+}
+
+ul.weekdays {
+  margin-bottom: 1em;
+}
+
+ul.weekdays li {
+  height: 1.5em;
+}
+
+ol.day-grid li {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 12vw;
+  max-height: 125px;
+}
+
+ul.weekdays abbr[title] {
+  border: none;
+  //font-weight: 800;
+  text-decoration: none;
+}
+
+ol.day-grid li:nth-child(1),
+ol.day-grid li:nth-child(2),
+ol.day-grid li:nth-child(3),
+ol.day-grid li:nth-child(34),
+ol.day-grid li:nth-child(35) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media all and (max-width: 800px) {
+  ul, ol {
+    grid-gap: .25em;
+  }
+  
+  ul.weekdays li {
+    font-size: 0;
+  }
+  
+  ul.weekdays > li abbr:after {
+      content: attr(title);
+      font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+      text-align: center;
+      // Padding for super-abbreviated day labels
+
+      
+      padding: 0.5em;
+    }
+}
