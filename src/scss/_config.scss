@@ -14,6 +14,8 @@ $gorko-base-size: 1rem;
  * your whole project.
  */
 $gorko-size-scale: (
+  '100': $gorko-base-size * 0.25,
+  '200': $gorko-base-size * 0.5,
   '300': $gorko-base-size * 0.75,
   '400': $gorko-base-size,
   '500': $gorko-base-size * 1.33,

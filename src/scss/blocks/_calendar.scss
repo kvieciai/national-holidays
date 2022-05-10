@@ -19,7 +19,8 @@ li {
   list-style: none;
   margin-left: 0;
   padding: 0.5em;
-  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  //font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 16px;
   border-radius: 16px;
 }
 
@@ -63,7 +64,8 @@ ol.day-grid li:nth-child(35) {
   
   ul.weekdays > li abbr:after {
       content: attr(title);
-      font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+      //font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+      font-size: 16px;
       text-align: center;
       // Padding for super-abbreviated day labels
 
