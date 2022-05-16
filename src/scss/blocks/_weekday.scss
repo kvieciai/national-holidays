@@ -2,7 +2,23 @@
     //font-weight: 800;
     
   abbr {
+    font-size: 0;
     border: none;
     text-decoration: none;
+  }
+
+  abbr::after {
+    content: attr(title);
+    font-size: get-size('400');
+  }
+
+  @include media-query('lg') {
+    abbr {
+      font-size: get-size('400');
+    }
+
+    abbr::after {
+      font-size: 0;
+    }
   }
 }

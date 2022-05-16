@@ -1,11 +1,24 @@
 .day {
-    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.03);
     height: 12vw;
     max-height: 10.5rem;
     border-radius: 16px;
     transition: all 150ms;
 
+  &-outline {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
   &-national {
+    background: get-color('light');
+    color: get-color('dark-shade');
+
+    img {
+      max-width:40%;
+      height:auto;
+    }
 
     &:hover {
       color: get-color('primary-shade');
@@ -15,23 +28,37 @@
   }
 
   &__number {
-    font-size: get-size('500');
-    line-height: get-size('500');
-    letter-spacing: -0.1em;
+    font-size: get-size('400');
+    line-height: get-size('400');
+    letter-spacing: -0.05em;
   }
 
   &__description {
     font-size: get-size('300');
+    line-height: get-size('400');
+  }
+
+  @include media-query('md') {
+    &__number {
+      font-size: get-size('600');
+      line-height: get-size('600');
+    }
+
+    &__description {
+      font-size: get-size('300');
+      line-height: get-size('300');
+    }
   }
 
   @include media-query('lg') {
     &__number {
-      font-size: get-size('700');
-      line-height: get-size('700');
+      font-size: get-size('800');
+      line-height: get-size('800');
     }
 
     &__description {
       font-size: get-size('400');
+      line-height: get-size('400');
     }
   }
 }

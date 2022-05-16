@@ -23,7 +23,7 @@ $gorko-size-scale: (
   '700': $gorko-base-size * 2.36,
   '800': $gorko-base-size * 3.15,
   '900': $gorko-base-size * 4.2,
-  'major': $gorko-base-size * 7,
+  'major': $gorko-base-size * 8,
 );
 
 /**
@@ -32,12 +32,12 @@ $gorko-size-scale: (
  * You can also use them to power borders, fills or shadows, for example.
  */
 $gorko-colors: (
-  'dark': #38445b,
-  'dark-shade': #263147,
-  'dark-glare': #505c73,
-  'light': #F2F2F2,
-  'light-shade': #EDEDED,
-  'light-glare': #F7F7F7,
+  'dark': #19191A,
+  'dark-shade': #0D0D0E,
+  'dark-glare': #252528,
+  'light': #DFCEBD,
+  'light-shade': #D5BFA9,
+  'light-glare': #E6D9CB,
   'primary': #513aa6,
   'primary-shade': #432e92,
   'primary-glare': #654ac9,
@@ -78,8 +78,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"Red Hat Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-      'sans': '"Red Hat Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      'base': '-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif',
+      'sans': '-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif',
     ),
     'output': 'standard',
     'property': 'font-family',
